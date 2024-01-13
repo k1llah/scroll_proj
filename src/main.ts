@@ -1,5 +1,6 @@
 import "./style.css";//
 import gsap from 'gsap';
+
 import ScrollTrigger from 'gsap/ScrollTrigger';
  gsap.registerPlugin(ScrollTrigger);
  let horizontalScrollBlock = document.querySelector(".horizontalScroll") as HTMLDivElement
@@ -19,7 +20,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
    },
  });
  elements.forEach((element, index) => {
-  horizontalScroll.to(element, { xPercent: -(index + 1) * 115 }, 0);
+  const el = element as EventTarget
+  horizontalScroll.to(el, { xPercent: -(index + 1) * 115 }, 0);
 });
 const horizontalScrollSecond = gsap.timeline({
 	xPercent: -50,
@@ -33,7 +35,8 @@ const horizontalScrollSecond = gsap.timeline({
    },
  });
  elements2.forEach((element, index) => {
-  horizontalScrollSecond.to(element, { xPercent: -(index + 1) * 115 }, 0); 
+  const el = element as EventTarget
+  horizontalScrollSecond.to(el, { xPercent: -(index + 1) * 115 }, 0); 
 });
 
  
