@@ -104,3 +104,13 @@
 .second_str{
   margin-top: -90px;
 }
+@media (max-width: 500px) {
+  .film_1, .film_2,.film_3,.film_4,.film_5{
+    width: 200px;
+    height: 100%;
+}
+.image_scroll{
+  width: 200px;
+  height: 100%;
+}
+}
