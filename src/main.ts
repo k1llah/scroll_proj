@@ -12,7 +12,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
   const screenWidth =  document.body.clientWidth;
 
   // Определите ваш коэффициент для вычисления шага в зависимости от ширины экрана
-  const coefficient = 0.08 // Измените значение по своему усмотрению
+  const coefficient = 0.8 // Измените значение по своему усмотрению
 
   // Рассчитайте шаг
   const step = screenWidth * coefficient;
