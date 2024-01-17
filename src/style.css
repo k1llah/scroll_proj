@@ -156,8 +156,8 @@
 .running_string{
   min-width: 400px;
 }
-.horizontalScroll{
-  width: 1000px !important;
+.horizontalScroll,.horizontalScroll_2{
+  width: 1500px !important;
   overflow: hidden !important;
 }
 .pin-spacer{
