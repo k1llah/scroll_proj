@@ -157,8 +157,9 @@
   min-width: 400px;
 }
 .horizontalScroll,.horizontalScroll_2{
-  width: 600px !important;
+  width: 1500px !important;
   overflow: hidden !important;
+  max-width: unset !important;
 }
 .pin-spacer{
   overflow: hidden !important;
